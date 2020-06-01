@@ -81,8 +81,6 @@ header nav ul li a {
 
   
   .box {
-    background-color: rgb(159, 201, 240);
-    opacity: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,6 +94,11 @@ header nav ul li a {
     .box {
       margin: 0;
     }
+  }
+
+  .box a {
+      text-decoration: none;
+      color: black;
   }
 
   #Bio {
@@ -134,7 +137,7 @@ header nav ul li a {
 
   #Refactor {
       grid-row-start: 6;
-      grid-column-start: 5;
+      grid-column-start: 6;
   }
 
 
@@ -143,22 +146,7 @@ header nav ul li a {
       grid-column-start: 8;
 
   }
-
-
-  #Music {
-      grid-row-start: 6;
-      grid-column-start: 8;
-
-  }
-
-
   
-
-
-
-
-
-
 
 
 
@@ -171,7 +159,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     font-size: 1.55vw;
-    background-color: rgb(159, 201, 240);
+    background-color: rgb(156, 195, 233);
     opacity: 75%;
     color: black;
     font-weight: bold;
