@@ -86,7 +86,7 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: auto;
     margin-left: 5px;
     margin-right: 5px;
     flex: 1 1 200px;
