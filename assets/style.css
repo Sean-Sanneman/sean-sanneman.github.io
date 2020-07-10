@@ -116,6 +116,7 @@ header nav ul li a {
   grid-column-start: 3;
   grid-column-end: 7;
   background-image: url(/assets/images/book_grdn.jpg);
+  background-color: #cccccc;
 }
 
 #password {
