@@ -1,47 +1,43 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("../assets/images/beach.jpg");
-    background-position: center 5%;
-    width: 100%;
-    height: 100%;
-    color: #105085; 
-    font-family: cursive; 
-
-    
+  background-image: url("../assets/images/beach.jpg");
+  background-position: center 5%;
+  width: 100%;
+  height: 100%;
+  color: #105085;
+  font-family: cursive;
 }
 
 /* header/nav start */
 
 header {
-    padding: 25px 35px; 
-    background-color: rgb(159, 201, 240);
-    opacity: 78%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  padding: 25px 35px;
+  background-color: rgb(159, 201, 240);
+  opacity: 78%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header h1 {
-    font-weight: bold;
-    margin: 0;
-    font-size: 36px;
-    color: black;
-     
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: black;
 }
 
 header a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 header nav {
-    margin: 7px 0;
+  margin: 7px 0;
 }
 
 header nav ul {
@@ -53,9 +49,9 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: 1.55vw;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.55vw;
 }
 
 /* end header/nav */
@@ -63,130 +59,110 @@ header nav ul li a {
 /* Grid/Main Content */
 
 .grid-container {
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: black;
-    text-shadow: 0 2px 0 rgba(122, 59, 59, 0.07);
-  }
-  
-  .grid {
-    grid-auto-flow: dense;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    
-  }
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  text-shadow: 0 2px 0 rgba(122, 59, 59, 0.07);
+}
 
-  
+.grid {
+  grid-auto-flow: dense;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+}
+
+@supports (display: grid) {
   .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-    flex: 1 1 200px;
+    margin: 0;
   }
-  
-  @supports (display: grid) {
-    .box {
-      margin: 0;
-    }
-  }
+}
 
-  .box a {
-      text-decoration: none;
-      color: black;
-  }
+.box a {
+  text-decoration: none;
+  color: black;
+}
 
-  #Bio {
-      grid-row-start: 2;
+#Bio {
+  grid-row-start: 2;
+}
 
-  }
+#Sean {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
 
-  
-  #Sean {
-      grid-column-start: 3;
-      grid-column-end: 7;
-      grid-row-start: 2;
-      grid-row-end: 3;
+#Work {
+  grid-row-start: 4;
+}
 
-  }
+#book-garden {
+  grid-row-start: 4;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  background-image: url("/assets/images/book_grdn.jpg");
+}
 
-  
-  #Work {
-      grid-row-start: 4;
+#password {
+  grid-row-start: 6;
+  grid-column-start: 3;
+}
 
-  }
+#weather {
+  grid-row-start: 6;
+  grid-column-start: 6;
+}
 
-  #Run-Buddy {
-      grid-row-start: 4;
-      grid-column-start: 3;
-      grid-column-end: 7;
-  }
-
-
-
-  #Fanpage {
-      grid-row-start: 6;
-      grid-column-start: 3;
-    
-  }
-
-  #Refactor {
-      grid-row-start: 6;
-      grid-column-start: 6;
-  }
-
-
-  #Poems {
-      grid-row-start: 4;
-      grid-column-start: 8;
-
-  }
-  
-
-
+#Poems {
+  grid-row-start: 4;
+  grid-column-start: 8;
+}
 
 /* Footer Start */
 
 footer {
-    padding: 25px 35px;
-    justify-content: space-between;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.55vw;
-    background-color: rgb(156, 195, 233);
-    opacity: 75%;
-    color: black;
-    font-weight: bold;
-
+  padding: 25px 35px;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.55vw;
+  background-color: rgb(156, 195, 233);
+  opacity: 75%;
+  color: black;
+  font-weight: bold;
 }
 
 footer h1 {
-    margin: 0;
-    font-size: 36px;
+  margin: 0;
+  font-size: 36px;
 }
 
 footer ul li {
-    padding: 0 60px;
-    display: flex;
-    flex-wrap: wrap;
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  padding: 0 60px;
+  display: flex;
+  flex-wrap: wrap;
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 footer a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-
-
-
-
