@@ -112,18 +112,18 @@ header nav ul li a {
 
 #book-garden {
   grid-row-start: 4;
+  grid-row-end: 7;
   grid-column-start: 3;
   grid-column-end: 7;
-  background-image: url("/assets/images/book_grdn.jpg");
 }
 
 #password {
-  grid-row-start: 6;
+  grid-row-start: 8;
   grid-column-start: 3;
 }
 
 #weather {
-  grid-row-start: 6;
+  grid-row-start: 8;
   grid-column-start: 6;
 }
 
