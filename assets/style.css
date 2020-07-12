@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 body {
@@ -122,11 +123,17 @@ header nav ul li a {
 #password {
   grid-row-start: 7;
   grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url(/assets/images/pswrd_genie.jpg);
+  background-color: #cccccc;
 }
 
 #weather {
   grid-row-start: 7;
   grid-column-start: 6;
+  grid-column-end: 8;
+  background-image: url(/assets/images/wthr_dash.jpg);
+  background-color: #cccccc;
 }
 
 #Poems {
