@@ -18,7 +18,7 @@ body {
 
 header {
   padding: 25px 35px;
-  background-color: rgb(159, 201, 240);
+  background-color: transparent;
   opacity: 78%;
   display: flex;
   justify-content: space-between;
@@ -111,32 +111,54 @@ header nav ul li a {
   grid-row-start: 4;
 }
 
-#book-garden {
+.anchors {
+  visibility: hidden;
+}
+
+#collab {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   grid-row-start: 4;
   grid-row-end: 6;
   grid-column-start: 3;
   grid-column-end: 7;
+  background-image: url(/assets/images/Collab_scr.jpg);
+  background-color: #cccccc;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+}
+
+#book-garden {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  grid-row-start: 7;
+  grid-column-start: 3;
   background-image: url(/assets/images/book_grdn.jpg);
   background-color: #cccccc;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
 }
 
 #password {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   grid-row-start: 7;
-  grid-column-start: 3;
+  grid-column-start: 6;
   background-image: url(/assets/images/pswrd_genie.jpg);
   background-color: #cccccc;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
 }
 
 #weather {
-  grid-row-start: 7;
-  grid-column-start: 6;
-  background-image: url(/assets/images/wthr_dash.jpg);
-  background-color: #cccccc;
-}
-
-#Poems {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   grid-row-start: 4;
   grid-column-start: 8;
+  background-image: url(/assets/images/wthr_dash.jpg);
+  background-color: #cccccc;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
 }
 
 /* Footer Start */
@@ -148,9 +170,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   font-size: 1.55vw;
-  background-color: rgb(156, 195, 233);
-  opacity: 75%;
-  color: black;
+  background-color: transparent;
+  opacity: 80%;
+  color: seashell;
   font-weight: bold;
 }
 
@@ -171,5 +193,5 @@ footer ul li {
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: seashell;
 }
